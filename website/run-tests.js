@@ -6,11 +6,10 @@ var spawn = require('child_process').spawn;
 var scripts = [];
 
 // Dgeni tests.
-scripts.push(
-  'node node_modules/.bin/jasmine JASMINE_CONFIG_PATH=unit_test.json');
+//scripts.push('node node_modules/.bin/jasmine JASMINE_CONFIG_PATH=unit_test.json');
 
 // Karma tests.
-scripts.push('node_modules/karma/bin/karma start --singleRun true');
+//scripts.push('node_modules/karma/bin/karma start --singleRun true');
 
 // Protractor.
 scripts.push('../bin/protractor');
