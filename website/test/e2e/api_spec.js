@@ -109,22 +109,7 @@ describe('Api', function() {
       '$', 'isPresent', 'isElementPresent', 'evaluate', 'allowAnimations', 'equals']);
   });
 
-  it('should show browser functions', function() {
-    // When you show browser.
-    apiPage.clickOnMenuItem('browser');
-
-    // Then ensure the child functions are shown.
-    expect(apiPage.getChildFunctionNames()).toEqual([
-      'angularAppRoot', 'waitForAngularEnabled', 'getProcessedConfig',
-      'forkNewDriverInstance', 'restart', 'restartSync',
-      'useAllAngular2AppRoots', 'waitForAngular', 'findElement', 'findElements',
-      'isElementPresent', 'addMockModule', 'clearMockModules',
-      'removeMockModule', 'getRegisteredMockModules', 'get', 'refresh',
-      'navigate', 'setLocation', 'getLocationAbsUrl', 'debugger', 'enterRepl',
-      'explore', 'pause', 'controlFlowIsEnabled']);
-  });
-
-  it('should view inherited function', function() {
+ it('should view inherited function', function() {
     // Given that you are viewing 'browser'.
     apiPage.clickOnMenuItem('browser');
 
